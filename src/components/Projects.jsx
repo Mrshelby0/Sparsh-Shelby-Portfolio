@@ -32,7 +32,7 @@ export default function Projects() {
       summary:
         "iPhone-style home screen clone to learn React fundamentals with components, layout, and transitions.",
       tags: ["React", "Learning", "UI"],
-      href: "#",
+      href: "https://github.com/Mrshelby0/Iphone_clone_Reactjs",
     },
     {
       title: "Java Intermediate Projects",
@@ -40,7 +40,7 @@ export default function Projects() {
       summary:
         "Collection of intermediate Java projects covering OOP, file handling, multithreading, and data structures.",
       tags: ["Java", "OOP", "Multithreading", "Data Structures"],
-      href: "#",
+      href: "https://github.com/Mrshelby0/Java-advance-projects-",
     },
     {
       title: "Resume Generator",
@@ -48,7 +48,7 @@ export default function Projects() {
       summary:
         "Interactive resume builder with responsive design and real-time preview. Built with HTML, Tailwind CSS, and JavaScript.",
       tags: ["HTML", "CSS", "TailwindCSS", "JavaScript", "Tool"],
-      href: "#",
+      href: "https://github.com/Mrshelby0/Resume_Generator",
     },
     {
       title: "Valorant Esports Assistant",
@@ -56,7 +56,7 @@ export default function Projects() {
       summary:
         "Digital assistant for scouting and recruitment using Amazon Bedrock and S3. Fetches data and provides insights on players and teams.",
       tags: ["AWS", "Bedrock", "S3", "Assistant", "AI"],
-      href: "#",
+      href: "https://github.com/Mrshelby0/VALORANT-Esports-Assistant",
     },
     {
       title: "Project Idea Hub",
@@ -64,7 +64,7 @@ export default function Projects() {
       summary:
         "Final-year project: a platform to discover and shape creative project ideas across levels and domains.",
       tags: ["Platform", "Web", "Ideas"],
-      href: "#",
+      href: "https://github.com/Mrshelby0/college_project",
     },
   ];
 
@@ -140,17 +140,11 @@ export default function Projects() {
         {/* CTA */}
         <div className="mt-12 flex flex-wrap items-center justify-center gap-4">
           <a
-            href="/resume.pdf"
+            href="#contact"
             className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-indigo-500 to-fuchsia-500 px-6 py-3 text-sm font-semibold text-white transition-transform hover:-translate-y-0.5"
           >
-            Get Full Resume
-            <ArrowIcon className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-          </a>
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-slate-100 backdrop-blur transition hover:bg-white/10"
-          >
             Collaborate on a project
+            <ArrowIcon className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
           </a>
         </div>
       </div>
@@ -201,12 +195,6 @@ function ProjectCard({ project, delay = 0, entered = false }) {
           className="group/btn inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-xs font-medium text-slate-100 transition hover:bg-white/15"
         >
           View Project <ExternalIcon className="h-3.5 w-3.5 transition-transform group-hover/btn:-translate-y-0.5 group-hover/btn:translate-x-0.5" />
-        </a>
-        <a
-          href="#"
-          className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-medium text-slate-100 hover:bg-white/10"
-        >
-          Case Study
         </a>
       </div>
     </div>
