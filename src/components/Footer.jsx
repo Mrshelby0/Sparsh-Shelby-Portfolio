@@ -76,7 +76,7 @@ export default function Footer() {
               <li className="flex items-center gap-2"><PhoneIcon className="h-4 w-4" /> +91 81306 47877</li>
             </ul>
             <div className="mt-4 flex items-center gap-3">
-              <a href="src/SparshResume.pdf" className="inline-flex items-center gap-2 rounded-full border border-fuchsia-400/30 bg-fuchsia-500/10 px-4 py-2 text-xs font-semibold text-fuchsia-200 hover:bg-fuchsia-500/15">
+              <a href="/SparshResume.pdf" className="inline-flex items-center gap-2 rounded-full border border-fuchsia-400/30 bg-fuchsia-500/10 px-4 py-2 text-xs font-semibold text-fuchsia-200 hover:bg-fuchsia-500/15">
                 Download Resume
               </a>
             </div>
