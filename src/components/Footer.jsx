@@ -7,9 +7,9 @@
 export default function Footer() {
   const year = new Date().getFullYear();
   const socials = [
-    { label: "GitHub", href: "#", icon: GitHubIcon },
-    { label: "LinkedIn", href: "#", icon: LinkedInIcon },
-    { label: "LeetCode", href: "https://leetcode.com/", icon: LeetCodeIcon },
+    { label: "GitHub", href: "https://github.com/Mrshelby0", icon: GitHubIcon },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/sparsh-sharma-2805bb291/", icon: LinkedInIcon },
+    { label: "HackerRank", href: "https://www.hackerrank.com/profile/sparshsharma1409", icon: LeetCodeIcon },
   ];
   const links = [
     { id: "home", label: "Home" },
@@ -76,7 +76,7 @@ export default function Footer() {
               <li className="flex items-center gap-2"><PhoneIcon className="h-4 w-4" /> +91 81306 47877</li>
             </ul>
             <div className="mt-4 flex items-center gap-3">
-              <a href="/resume.pdf" className="inline-flex items-center gap-2 rounded-full border border-fuchsia-400/30 bg-fuchsia-500/10 px-4 py-2 text-xs font-semibold text-fuchsia-200 hover:bg-fuchsia-500/15">
+              <a href="/SparshResume.pdf" className="inline-flex items-center gap-2 rounded-full border border-fuchsia-400/30 bg-fuchsia-500/10 px-4 py-2 text-xs font-semibold text-fuchsia-200 hover:bg-fuchsia-500/15">
                 Download Resume
               </a>
             </div>
@@ -86,9 +86,6 @@ export default function Footer() {
         <div className="mt-10 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 text-xs text-slate-400 sm:flex-row">
           <div>© {year} Sparsh Sharma. All rights reserved.</div>
           <div className="flex items-center gap-3">
-            <a href="#" className="hover:text-white">Privacy</a>
-            <span className="text-slate-600">•</span>
-            <a href="#" className="hover:text-white">Terms</a>
           </div>
         </div>
       </div>
