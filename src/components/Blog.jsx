@@ -10,7 +10,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 export default function Blog() {
   const posts = [
     {
-        img: "/Grafana.png",
+        img: "public/Grafana.png",
       title: "From Kubernetes to Career Advice: A Day of Grafana, Gyan, and Giggles at Microsoft Noida",
       summary:
         "Attended Grafana & Friends at Microsoft Noida. More than slides & plugins — it was about coding habits, career pivots, and the mentorship we all wish we had. Questions answered that aren’t in job descriptions",
@@ -20,7 +20,7 @@ export default function Blog() {
       href: "https://medium.com/@sparshsharma1409/from-kubernetes-to-career-advice-a-day-of-grafana-gyan-and-giggles-at-microsoft-noida-f80423665e04",
     },
     {
-        img: "/5stage.png",
+        img: "public/5stage.png",
       title: "The Five Stages of Debugging (A Developer’s Emotional Breakdown)",
       summary:
         "Ever feel like debugging is an emotional sport? This one’s for you. Join me through the 5 stages we all hit when code refuses to behave.",
@@ -30,7 +30,7 @@ export default function Blog() {
       href: "https://medium.com/@sparshsharma1409/the-five-stages-of-debugging-a-developers-emotional-breakdown-8704e06a516f",
     },
     {
-        img: "/fvsb.png",
+        img: "public/fvsb.png",
       title: "Backend Dev vs. Frontend Dev: Who’s Really Suffering More?",
       summary:
         "Backend or frontend—who's really suffering more? A humorous take on the daily struggles of developers on both sides",
