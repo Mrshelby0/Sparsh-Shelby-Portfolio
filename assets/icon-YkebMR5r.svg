@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Shelby Logo Pack: 3 SVG variants (monogram, wordmark, badge)
+     Open this file and <use> the symbol you want, or export the whole SVG as a PNG/SVG.
+     Colors: deep-indigo -> teal gradient. Scalable, accessible. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-labelledby="title desc">
+  <title id="title">Shelby brand logo pack</title>
+  <desc id="desc">Three variants: monogram, wordmark, and badge. Color theme uses an indigo-teal gradient and a subtle racing stripe motif.</desc>
+
+  <defs>
+    <!-- Gradient used across variants -->
+    <linearGradient id="grad-indigo-teal" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="45%" stop-color="#5b21b6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+
+    <!-- Soft shadow filter -->
+    <filter id="soft-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+
+    <!-- Racing stripe pattern (diagonal) -->
+    <pattern id="racing-stripe" width="20" height="20" patternUnits="userSpaceOnUse" patternTransform="rotate(25)">
+      <rect width="20" height="20" fill="transparent" />
+      <rect x="0" y="0" width="8" height="20" fill="rgba(255,255,255,0.06)"/>
+    </pattern>
+
+    <!-- Monogram glyph as a reusable symbol -->
+    <symbol id="monogram" viewBox="0 0 200 200">
+      <circle cx="100" cy="100" r="92" fill="url(#grad-indigo-teal)" />
+      <!-- subtle stripe over circle -->
+      <rect x="-20" y="60" width="240" height="36" fill="url(#racing-stripe)" opacity="0.7" transform="rotate(-12 100 100)"/>
+      <!-- Stylized 'S' -->
+      <path d="M55 70
+               C55 50, 120 50, 120 80
+               C120 110, 70 110, 70 130
+               C70 150, 140 150, 140 120"
+            fill="none" stroke="#ffffff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+    </symbol>
+
+    <!-- Wordmark symbol -->
+    <symbol id="wordmark" viewBox="0 0 600 160">
+      <rect width="600" height="160" rx="14" fill="#0b1220" />
+      <text x="40" y="105" font-family="Segoe UI, Roboto, system-ui, -apple-system, 'Helvetica Neue', Arial" font-size="78" font-weight="700" fill="url(#grad-indigo-teal)">Shelby</text>
+      <text x="42" y="138" font-family="Segoe UI, Roboto, system-ui, -apple-system, 'Helvetica Neue', Arial" font-size="12" fill="#9aa4b2">Front-end Developer • React · Tailwind · Framer Motion</text>
+    </symbol>
+
+    <!-- Badge symbol (monogram + wordmark compact) -->
+    <symbol id="badge" viewBox="0 0 420 140">
+      <rect width="420" height="140" rx="18" fill="#071029" />
+      <g transform="translate(20,16)">
+        <use href="#monogram" width="108" height="108" />
+        <g transform="translate(132,18)">
+          <text x="0" y="54" font-family="Segoe UI, Roboto, system-ui, -apple-system, 'Helvetica Neue', Arial" font-size="46" font-weight="700" fill="url(#grad-indigo-teal)">Shelby</text>
+          <text x="0" y="84" font-family="Segoe UI, Roboto, system-ui, -apple-system, 'Helvetica Neue', Arial" font-size="11" fill="#7f8a98">Interactive front-end • React + Tailwind</text>
+        </g>
+      </g>
+    </symbol>
+
+  </defs>
+
+  <!-- Layout: show all three variants side-by-side for easy preview -->
+  <g transform="translate(40,40)">
+    <!-- Monogram preview -->
+    <g transform="translate(0,0) scale(1.2)">
+      <use href="#monogram" />
+      <text x="0" y="150" font-family="Segoe UI, Roboto, system-ui" font-size="13" fill="#94a3b8">Monogram — compact mark</text>
+    </g>
+
+    <!-- Wordmark preview -->
+    <g transform="translate(260,18)">
+      <use href="#wordmark" />
+      <text x="0" y="146" font-family="Segoe UI, Roboto, system-ui" font-size="13" fill="#94a3b8">Wordmark — full name lockup</text>
+    </g>
+
+    <!-- Badge preview -->
+    <g transform="translate(880,18)">
+      <use href="#badge" />
+      <text x="0" y="146" font-family="Segoe UI, Roboto, system-ui" font-size="13" fill="#94a3b8">Badge — compact horizontal</text>
+    </g>
+  </g>
+
+</svg>
