@@ -10,58 +10,34 @@ import { useEffect, useMemo, useRef, useState } from "react";
 export default function Blog() {
   const posts = [
     {
-      title: "Designing delightful UIs with React and Tailwind",
+        img: "src/assets/Grafana.png",
+      title: "From Kubernetes to Career Advice: A Day of Grafana, Gyan, and Giggles at Microsoft Noida",
       summary:
-        "A practical guide to building clean, scalable, and accessible interfaces using component patterns and utility-first styling.",
-      date: "2025-08-01",
-      read: "6 min",
-      tags: ["React", "TailwindCSS", "UI"],
-      href: "#",
+        "Attended Grafana & Friends at Microsoft Noida. More than slides & plugins — it was about coding habits, career pivots, and the mentorship we all wish we had. Questions answered that aren’t in job descriptions",
+      date: "2025-05-29",
+      read: "3 min",
+      tags: ["Tech", "CareerGrowth", "Grafana", "Kubernetes", "Microsoft", "Event"],
+      href: "https://medium.com/@sparshsharma1409/from-kubernetes-to-career-advice-a-day-of-grafana-gyan-and-giggles-at-microsoft-noida-f80423665e04",
     },
     {
-      title: "SEO writing that actually helps users (and ranks)",
+        img: "src/assets/5stage.png",
+      title: "The Five Stages of Debugging (A Developer’s Emotional Breakdown)",
       summary:
-        "From intent research to information architecture: how to write content that is useful, readable, and search-friendly.",
-      date: "2025-07-10",
-      read: "7 min",
-      tags: ["SEO", "Content", "Writing"],
-      href: "#",
+        "Ever feel like debugging is an emotional sport? This one’s for you. Join me through the 5 stages we all hit when code refuses to behave.",
+      date: "2025-05-27",
+      read: "2 min",
+      tags: ["Tech", "Debugging", "DeveloperExperience"],
+      href: "https://medium.com/@sparshsharma1409/the-five-stages-of-debugging-a-developers-emotional-breakdown-8704e06a516f",
     },
     {
-      title: "Micro‑interactions that make products feel alive",
+        img: "src/assets/fvsb.png",
+      title: "Backend Dev vs. Frontend Dev: Who’s Really Suffering More?",
       summary:
-        "Using motion, feedback, and state to guide users — without overwhelming the experience.",
-      date: "2025-06-16",
+        "Backend or frontend—who's really suffering more? A humorous take on the daily struggles of developers on both sides",
+      date: "2025-05-28",
       read: "5 min",
-      tags: ["UX", "Animation", "Frontend"],
-      href: "#",
-    },
-    {
-      title: "From idea to shipped project: a lightweight workflow",
-      summary:
-        "Track ideas, scope features, and maintain momentum with a simple repeatable process.",
-      date: "2025-05-01",
-      read: "4 min",
-      tags: ["Product", "Workflow"],
-      href: "#",
-    },
-    {
-      title: "React performance tips for real apps",
-      summary:
-        "Memoization, list virtualization, and practical patterns to keep UIs snappy.",
-      date: "2025-04-12",
-      read: "8 min",
-      tags: ["React", "Performance"],
-      href: "#",
-    },
-    {
-      title: "Structuring content that converts",
-      summary:
-        "How to combine UX microcopy, hierarchy, and clarity to reduce friction and increase action.",
-      date: "2025-03-02",
-      read: "6 min",
-      tags: ["UX", "Content"],
-      href: "#",
+      tags: ["Tech", "Backend", "Frontend", "Development"],
+      href: "https://medium.com/@sparshsharma1409/backend-dev-vs-frontend-dev-whos-really-suffering-more-ba1d57cce554",
     },
   ];
 
@@ -159,7 +135,7 @@ export default function Blog() {
         {/* CTA */}
         <div className="mt-12 flex flex-wrap items-center justify-center gap-4">
           <a
-            href="#"
+            href="https://medium.com/@sparshsharma1409"
             className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-indigo-500 to-fuchsia-500 px-6 py-3 text-sm font-semibold text-white transition-transform hover:-translate-y-0.5"
           >
             View All Articles
@@ -194,6 +170,7 @@ function BlogCard({ post, delay = 0, entered = false }) {
 
       {/* Cover */}
       <div className="relative h-36 w-full overflow-hidden rounded-xl border border-white/10 bg-gradient-to-br from-slate-800 to-slate-900">
+        <img src={post.img} alt="" className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(255,255,255,0.12)_0%,transparent_40%)]" />
         <div className="absolute left-3 top-3 inline-flex items-center gap-1 rounded-full border border-white/10 bg-black/30 px-2 py-0.5 text-[10px] text-slate-300 backdrop-blur">
           <PenIcon className="h-3 w-3" /> Article
