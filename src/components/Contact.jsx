@@ -47,9 +47,11 @@ export default function Contact() {
   ];
 
   const experiences = [
-    { label: "Upwork", desc: "Freelancer — Front‑end & Content" },
-    { label: "Foodsure", desc: "Content Writer" },
-    { label: "Collegehai", desc: "Content Writer (Full‑Time)" },
+    { label: "Frontend Dev @ Upwork", desc: "Oct '23 - Present" },
+    { label: "Neo4j Intern", desc: "Nov-Dec '24" },
+    { label: "Content @ Foodsure", desc: "Jun-Aug '25" },
+    { label: "Writer @ Collegehai", desc: "Aug-Oct '25" },
+    { label: "Open Source Contributor", desc: "Apr '23 - Present" }
   ];
 
   const certs = [

@@ -33,43 +33,61 @@ export default function About() {
 
   const experiences = [
     {
-      org: "Freelance (Upwork)",
-      role: "Content Writer",
-      period: "Oct 2023 – May 2025",
+      org: "Collagehai",
+      role: "Junior Content Writer",
+      period: "Aug 2025 – Oct 2025",
       bullets: [
-        "Crafted SEO blogs, landing pages, and web copy for startups and B2B brands.",
-        "Shaped brand tone from scratch and ghostwrote for founders.",
-        "Built content calendars, handled multiple brand identities concurrently.",
-        "Focused on storytelling that builds trust and drives engagement.",
-      ],
-    },
-    {
-      org: "Freelancer (Upwork)",
-      role: "Front‑End Developer",
-      period: "Oct 2023 – May 2025",
-      bullets: [
-        "Developed responsive interfaces with React and Tailwind.",
-        "Shipped polished features and micro‑interactions across projects.",
+        "Created SEO-optimized blogs, news stories, and web content for student audience",
+        "Enhanced readability and engagement through strategic content structuring",
+        "Collaborated with editorial team to maintain brand voice consistency",
+        "Delivered high-quality content under tight deadlines"
       ],
     },
     {
       org: "Foodsure / Legal4sure / Foodsure Machine",
-      role: "Content Writer",
-      period: "Jul 2025 – Aug 2025",
+      role: "Content Writer and Social Media Manager",
+      period: "June 2025 – Aug 2025",
       bullets: [
-        "Managed LinkedIn content (articles, guides, case studies) across 3 brands.",
-        "Wrote on‑page, off‑page, and service page blogs for traffic & lead gen.",
-        "Created YouTube/Instagram content (scripts, titles, descriptions, hashtags).",
-        "Managed Google My Business profiles to improve local SEO.",
-        "Oversaw founder’s personal LinkedIn for brand building.",
+        "Developed LinkedIn content strategy across 3 brands including articles and case studies",
+        "Generated SEO-optimized blog content for increased traffic and lead generation",
+        "Produced multimedia content for YouTube and Instagram platforms",
+        "Optimized Google My Business profiles for improved local search visibility",
+        "Managed executive LinkedIn presence for brand development"
       ],
     },
     {
-      org: "Collegehai",
-      role: "Content Writer (Full‑Time)",
-      period: "Aug 2025 – Present",
+      org: "Neo4j",
+      role: "Software Development Internship",
+      period: "Nov 2024 – Dec 2024",
       bullets: [
-        "Delivering high‑quality, strategic content to support growth.",
+        "Developed a React-based resume generator using Neo4j for data storage",
+        "Implemented user authentication and profile management features",
+        "Designed responsive UI with Tailwind CSS for optimal user experience",
+        "Integrated Neo4j database for efficient data retrieval and storage"
+      ],
+    },
+    {
+      org:"Django India, PyDelhi, AWS Cloud Clubs, PyEuro, Virtual",
+      role: "Open Source Contributor and Volunteer",
+      period: "Apr 2023 - Present",
+      bullets: [ 
+  "Managed community content, social media updates, and event coverage for major tech communities.",
+  "Contributed to open source projects by fixing bugs, adding features, and improving documentation.",
+  "Assisted in organizing virtual events, webinars, and meetups to foster community engagement.",
+  "Collaborated with developers and community members to enhance project visibility and impact.",
+  "Interviewed industry experts and produced blogs and posts that drove engagement.",
+  "Invited by Microsoft to cover a Grafana event, producing high-engagement content and interviews"
+      ],
+    },
+    {
+      org: "Freelance (Upwork)",
+      role: "Front-End Developer | Freelance / Project-Based Work",
+      period: "Oct 2023 - Present",
+      bullets: [
+        "Lead content strategy and creation for company growth initiatives",
+        "Produce SEO-optimized educational content for student audience",
+        "Manage editorial calendar and content distribution",
+        "Drive engagement through targeted content campaigns"
       ],
     },
   ];
